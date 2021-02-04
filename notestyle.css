@@ -1,0 +1,120 @@
+body{
+    background-color: lightsalmon;
+    background-image: url(#yourlink)
+}
+/* SAAT MENGGUNAKAN CLASS DALAM CSS WAJIB MENGGUNAKAN (.) SEBELUM PENULISAN CLASS */
+
+/* contoh */
+.yourclass {
+    color: green;
+}
+
+/* color - warna */
+p {
+    color: lightgreen; /* nama warna */
+    color: #ff00ff; /* hexadecimal */
+    color: rgb(60, 232, 255) /* RGB */
+}
+/* text-indent - jarak awal paragraf*/
+p {
+    text-indent: 50%;
+    text-indent: 50px;
+}
+/* text-decoration - dekorasi text */
+p {
+    text-decoration: none;
+    text-decoration: overline;
+    text-decoration: underline;
+    text-decoration: line-through;
+}
+/* text-tranform (none,lowercase,uppercase,capitalize) */
+p {
+    text-transform: none;
+    text-transform: lowercase; /*huruf kecil semua*/
+    text-transform: uppercase; /*huruf kapital semua*/
+    text-transform: capitalize /*huruf kapital diawal semua kata*/
+    ;
+}
+/* letter spacing - jarak antar hurus */
+p {
+    letter-spacing: normal;
+    letter-spacing: 10px;
+}
+/* word spacing - jarak antar kata */
+p {
+    word-spacing: normal;
+    word-spacing: 1px;
+}
+/* pseudo class of link - link,hover,active,visited*/
+/* before active */
+yourclass:link { 
+    color: orange;
+}
+/* semi active */
+yourclass:hover { 
+    color: lime;
+    font-size: large;
+}
+/* ongoing clicked */
+yourclass:active {
+    font-style: italic;
+}
+/* link was visited */
+yourclass:visited {
+    color: purple;
+}
+/* pseudo class of element - sebuah item didalam parent*/
+/* element pertama didalam parent */
+yourelemen:first-child {
+    color: red;
+}
+/* element terakhir didalam parent */
+yourelemen:last-child {
+    color: red;
+}
+/* element ke(n) didalam parent */
+yourelemen:nth-child() {
+    color: red;
+}
+/* nth-child bisa berurutan atau menggunakan pola (2n), (3n+1), (4n-1) */
+yourelement:nth-child(2n-4) a {
+    color: rgb(21, 126, 0);
+}
+/* nth-child bisa menggunakan ganjil & genapa (even & odd) */
+yourelement:nth-child(odd) a {
+    color: rgb(0, 0, 0);
+}
+yourelement:nth-child(even) a {
+    color: red;
+}
+/* pseudo class of element position */
+/* :first-of-type memilih element pertama dari sebuah jenis / tipe tag   */
+yourelement:first-of-type {
+    color: red;
+}
+/* :last-of-type memilih element terakhir dari sebuah jenis / tipe tag */
+yourelement:last-of-type {
+    color: green;
+}
+/* specificity - perhitungan berat selector */
+/* specificity position - ( inline | id | class | element ) */
+
+/* untuk menggunakan selector element 
+element { properti: value; } */
+
+/* untuk menggunakan selector class
+.class { properti: value; } */
+
+/* untuk menggunakan selector id
+#id { properti: value; } */
+
+/* berikut cara menggabungkan selector untuk menambah berat */
+
+/* untuk menggabungkan selector element & class 
+element.class { properti: value; */
+
+/* untuk menggabungkan selector element & id
+element#id { properti: value; */
+
+/* untuk menggabungkan selector element, id, & class
+element#id element.class { properti: value; } */
